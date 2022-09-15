@@ -15,17 +15,12 @@
     @extend %header-share;
 }
 
-.address {
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-a {
-    color: $white-s1;
-}
-
 .header-menu {
     background-color: $pink-s1;
+
+    a {
+        color: $white-s1;
+    }
 }
 
 .menu-search {
@@ -36,113 +31,119 @@ a {
     .dropdown-search {
         border: 1px solid $white-s1;
     }
-}
 
-.nation {
-    font-size: 12px;
-}
-
-.btn_buy {
-    text-align: center;
-    background-color: $white-s1;
-}
-
-.languege {
-    float: right;
-}
-
-.btn_search {
-    color: #ffffff;
-    background-color: #ff0000;
-}
-
-.naddress {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.btn_cart,
-.menu_down,
-.icon_shop,
-.account {
-    display: none;
-}
-
-@media only screen and (max-width: 768px) {
-    .naddress {
-        display: none;
-        text-overflow: ellipsis;
+    .btn_search {
+        color: #ffffff;
+        background-color: #ff0000;
     }
+}
 
-    .header-top {
-        margin-left: 0;
-        margin-right: 0;
-    }
 
+.start_header {
     .info {
-        margin-left: 0;
-        margin-right: 0;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        .nation {
+            font-size: 12px;
+        }
 
-        .account,
         .languege {
-            display: block;
+            float: right;
         }
     }
+     .address {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+           font-size: 0.7em;
+            
+        }
+}
 
-    .menu-search {
-        border: 1px solid white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
 
-        .search,
-        .dropdown-search {
+
+
+
+
+
+    .btn_cart,
+    .menu_down,
+    .icon_shop,
+    .account {
+        display: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .address {
+            display: none;
+            text-overflow: ellipsis;
+        }
+
+        .header-top {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .info {
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .account,
+            .languege {
+                display: block;
+            }
+        }
+
+        .menu-search {
+            border: 1px solid white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .search,
+            .dropdown-search {
+                display: none;
+            }
+
+            .btn_cart {
+                display: block;
+
+            }
+
+            .btn_search {
+                color: black;
+                background-color: #ffffff;
+            }
+        }
+
+        .menu_img {
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .menu_down,
+            .imgshop {
+                display: block;
+            }
+
+            .img_shop {
+                width: 3em;
+            }
+        }
+
+        .info_user_shop,
+        .header-menu {
             display: none;
         }
 
-        .btn_cart {
-            display: block;
+        .header-main,
+        .content_menu,
+        .start_header {
+            margin: 0;
+            padding: 0;
         }
 
-        .btn_search {
-            color: black;
-            background-color: #ffffff;
-        }
     }
-
-    .menu_img {
-        padding: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .menu_down,
-        .imgshop {
-            display: block;
-        }
-
-        .img_shop {
-            width: 3em;
-        }
-    }
-
-    .info_user_shop,
-    .header-menu {
-        display: none;
-    }
-
-    .header-main,
-    .content_menu,.start_hedder {
-        margin: 0;
-        padding: 0;
-    }
-
-
-
-
-}
