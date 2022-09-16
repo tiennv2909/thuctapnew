@@ -1,0 +1,24 @@
+{
+  "name": "thuctap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch assets/scss/app.scss assets/css/app.css"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tiennk666/thuctap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tiennk666/thuctap/issues"
+  },
+  "homepage": "https://github.com/Tiennk666/thuctap#readme",
+  "dependencies": {
+    "sass": "^1.54.9"
+  }
+}

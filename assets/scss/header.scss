@@ -1,0 +1,149 @@
+%header-share {
+    margin-left: 7%;
+    margin-right: 7%;
+    display: flex;
+    align-items: center;
+}
+
+.header-top {
+    @extend %header-share;
+}
+
+.header-main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @extend %header-share;
+}
+
+.header-menu {
+    background-color: $pink-s1;
+
+    a {
+        color: $white-s1;
+    }
+}
+
+.menu-search {
+    border: 1px solid $red-s1;
+    padding: 0 0 0 0;
+
+    .search,
+    .dropdown-search {
+        border: 1px solid $white-s1;
+    }
+
+    .btn_search {
+        color: #ffffff;
+        background-color: #ff0000;
+    }
+}
+
+
+.start_header {
+    .info {
+        .nation {
+            font-size: 12px;
+        }
+
+        .languege {
+            float: right;
+        }
+    }
+     .address {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+           font-size: 0.7em;
+            
+        }
+}
+
+
+
+
+
+
+
+    .btn_cart,
+    .menu_down,
+    .icon_shop,
+    .account {
+        display: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .address {
+            display: none;
+            text-overflow: ellipsis;
+        }
+
+        .header-top {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .info {
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .account,
+            .languege {
+                display: block;
+            }
+        }
+
+        .menu-search {
+            border: 1px solid white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .search,
+            .dropdown-search {
+                display: none;
+            }
+
+            .btn_cart {
+                display: block;
+
+            }
+
+            .btn_search {
+                color: black;
+                background-color: #ffffff;
+            }
+        }
+
+        .menu_img {
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .menu_down,
+            .imgshop {
+                display: block;
+            }
+
+            .img_shop {
+                width: 3em;
+            }
+        }
+
+        .info_user_shop,
+        .header-menu {
+            display: none;
+        }
+
+        .header-main,
+        .content_menu,
+        .start_header {
+            margin: 0;
+            padding: 0;
+        }
+
+    }
