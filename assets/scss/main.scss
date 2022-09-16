@@ -5,7 +5,7 @@
 .featured_products {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   margin-top: 2em;
 
@@ -15,7 +15,7 @@
 
     .feature-category {
       position: relative;
-      padding-bottom: 53%;
+      padding-bottom: 45%;
       .img_product {
         position: absolute;
         top: 0;
@@ -55,6 +55,62 @@
 
 .list_product {
   margin-top: 2em;
+ 
+  .main_products {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    .arrow_product_left {
+      font-size: 20px;
+      margin-left: 1%;
+    }
+    .arrow_product_right {
+      font-size: 20px;
+      margin-right: 1%;
+    }
+    .product {
+      margin-left: 0.2%;
+      margin-right: 0.2%;
+      width: 25%;
+      background-color: white;
+      border: 1px solid white;
+      border-radius: 7px;
+      &:hover {
+        box-shadow: 5px 7px 10px #ff71714d;
+      }
+
+      .pack_product {
+        position: relative;
+        padding-bottom: 80%;
+        .iphone_img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .discount {
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          background-color: red;
+          font-size: 12px;
+          padding: 1px;
+          z-index: 2;
+          color: white;
+        }
+      }
+      .info_product {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 3%;
+      }
+    }
+  }
+  .btn_show_all {
+    background-color: white;
+    border: 1px solid #e1e1e1;
+  }
 }
 
 .icon_chat {
